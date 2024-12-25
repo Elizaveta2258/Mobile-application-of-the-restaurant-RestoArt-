@@ -43,4 +43,4 @@ public class vhod extends AppCompatActivity {
             finish(); // Закрыть текущую активность
         }, 3000); // 5000 миллисекунд = 5 секунд
     }
-}
+}//
