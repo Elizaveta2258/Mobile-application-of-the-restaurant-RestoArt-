@@ -33,7 +33,6 @@ public class bronirovanie extends AppCompatActivity {
         editTextDate = findViewById(R.id.editTextDate);
         editTextName = findViewById(R.id.editTextName);
         buttonSave = findViewById(R.id.buttonSave);
-
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -45,7 +44,6 @@ public class bronirovanie extends AppCompatActivity {
                 if (!tableNumber.isEmpty() && !date.isEmpty() && !name.isEmpty()) {
                     dbHelper.insertData(tableNumber, date, name);
 
-                    // Передаем данные в активити zabron
                     Intent intent = new Intent(bronirovanie.this, zabron.class);
                     intent.putExtra("NAME", name);
                     intent.putExtra("TABLE_NUMBER", tableNumber);
@@ -57,8 +55,6 @@ public class bronirovanie extends AppCompatActivity {
                     editTextDate.setText("");
                     editTextName.setText("");
                 } else {
-                    // Можно добавить отображение ошибки, если поля не заполнены
-                    // Например, Snackbar или Toast
                 }
             }
         });

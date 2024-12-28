@@ -17,7 +17,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.03"
-        app:srcCompat="@drawable/blonde_confident_female_server_butterfly_neck_holding_tray_red_background" />
+        app:srcCompat="@drawable/blonde_confident_female_server_b" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -27,7 +27,7 @@
         android:layout_marginTop="264dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/handsome_man_dark_grey_background" />
+        app:srcCompat="@drawable/handsome_man_dark_grey_backgroun" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -37,7 +37,7 @@
         android:layout_marginTop="500dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/young_smiling_male_waiter_uniform_with_butterfly_neck_raising_tray_holding_towel_red_background" />
+        app:srcCompat="@drawable/young_smiling_male_waiter_unifor" />
 
     <Button
         android:id="@+id/nazad2"
