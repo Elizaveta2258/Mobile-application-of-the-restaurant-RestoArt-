@@ -21,7 +21,7 @@ public class zabron extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(zabron.this, glavnoe.class);
                 startActivity(intent);
-                finish(); // Закрывает текущую активити
+                finish();
             }
         });
 
@@ -30,8 +30,6 @@ public class zabron extends AppCompatActivity {
         String tableNumber = getIntent().getStringExtra("TABLE_NUMBER");
         String date = getIntent().getStringExtra("DATE");
         String name = getIntent().getStringExtra("NAME");
-
-        // Обработка возможных null значений и создание более читаемого текста
         StringBuilder message = new StringBuilder("Ваша запись готова!");
 
         if (tableNumber != null) {
@@ -51,8 +49,6 @@ public class zabron extends AppCompatActivity {
         } else {
             message.append("\nИмя: не указано");
         }
-
-        // Устанавливаем текст в TextView
         textView.setText(message.toString());
     }
 }

@@ -17,8 +17,6 @@ public class glavnoe extends AppCompatActivity {
         Button bron = findViewById(R.id.bron);
         Button menu = findViewById(R.id.menu);
         Button ofichiant = findViewById(R.id.ofichiant);
-
-        // Например, вызываем метод по нажатию кнопки
         bron.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

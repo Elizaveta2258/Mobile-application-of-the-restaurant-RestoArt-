@@ -48,9 +48,20 @@ public class DatabaseBron extends SQLiteOpenHelper {
         db.insert(TABLE_NAME, null, values);
         db.close();
     }
+
+    public boolean isTableAvailable(String tableNumber, String date) {
+        SQLiteDatabase db = this.getReadableDatabase();
+        Cursor cursor = db.rawQuery("SELECT * FROM " + TABLE_NAME +
+                " WHERE " + COLUMN_TABLE_NUMBER + " = ? AND " +
+                COLUMN_DATE + " = ?", new String[]{tableNumber, date});
+        boolean isAvailable = (cursor.getCount() == 0); // Если стол не занят, возвращаем true
+        cursor.close();
+        return isAvailable;
+    }
+
     public Cursor getAllReservations() {
         SQLiteDatabase db = this.getReadableDatabase();
         return db.rawQuery("SELECT * FROM " + TABLE_NAME, null);
     }
+}
 
-    }

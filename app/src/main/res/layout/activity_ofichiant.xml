@@ -44,48 +44,119 @@
         android:layout_width="92dp"
         android:layout_height="47dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="4dp"
         android:backgroundTint="#FFA88C"
         android:text="Назад"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/oficc1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="276dp"
-        android:background="#00FFFFFF"
-        android:text="Смирнова Виктория "
-        android:textColor="#000000"
-        android:textSize="16sp"
+    <EditText
+        android:id="@+id/ratingInput"
+        android:layout_width="296dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="28dp"
+        android:hint="Введите оценку от 1 до 5"
+        android:inputType="number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/oficc2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="248dp"
-        android:layout_marginTop="488dp"
-        android:background="#00FFFFFF"
-        android:text="Сидоров Андрей"
-        android:textColor="#020202"
-        android:textSize="16sp"
+        android:id="@+id/waiter1Button"
+        android:layout_width="145dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="252dp"
+        android:layout_marginTop="156dp"
+        android:backgroundTint="#FFA88C"
+        android:text="Оценить"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/oficc3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/waiter2Button"
+        android:layout_width="145dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="372dp"
+        android:backgroundTint="#FFA88C"
+        android:text="Оценить"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/averageRatingText1"
+        android:layout_width="178dp"
+        android:layout_height="28dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="284dp"
+        android:text="Средний рейтинг: 0.0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/waiter3Button"
+        android:layout_width="145dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="264dp"
+        android:layout_marginTop="580dp"
+        android:backgroundTint="#FFA88C"
+        android:text="Оценить"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/averageRatingText3"
+        android:layout_width="178dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="4dp"
         android:layout_marginTop="684dp"
-        android:background="#00FFFFFF"
+        android:text="Средний рейтинг: 0.0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/averageRatingText2"
+        android:layout_width="178dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="492dp"
+        android:text="Средний рейтинг: 0.0"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="100dp"
+        android:text="Смирнова Виктория"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="500dp"
         android:text="Королёв Александр"
-        android:textColor="#000000"
-        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="304dp"
+        android:text="Сидоров Антон"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -93,22 +164,11 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="16dp"
-        android:text="Нажмите на имя официанта, котрого хотите оценить"
-        android:textAlignment="center"
-        android:textSize="24sp"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="4dp"
+        android:text="Оцените официантов"
+        android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/buttonеее"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="428dp"
-        android:text="Button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 

@@ -12,12 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RestoArt"
         tools:targetApi="31">
-        <activity android:name=".ofichiant"></activity>
-        <activity android:name=".ofik1"></activity>
         <activity
             android:name=".menu2"
             android:exported="false" />
-
+        <activity
+            android:name=".ofichiant"
+            android:exported="false" />
         <activity
             android:name=".menu"
             android:exported="false" />
